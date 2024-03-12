@@ -24,6 +24,7 @@ const Person = () => {
         });
       }
     };
+    // Flagga för att ignorera API-svaret om komponenten tas bort innan svaret är klart
     let ignore = false;
     fetchLuke();
     return () => {
