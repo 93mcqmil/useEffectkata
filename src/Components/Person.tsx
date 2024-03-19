@@ -5,6 +5,7 @@ type SWPerson = {
   eye_color: string;
   birth_year: string;
   gender: string;
+  skin_color: string;
 };
 
 const Person = () => {
@@ -21,6 +22,7 @@ const Person = () => {
           eye_color: luke.eye_color,
           birth_year: luke.birth_year,
           gender: luke.gender,
+          skin_color: luke.skin_color,
         });
       }
     };
@@ -36,7 +38,7 @@ const Person = () => {
     <div>
       {/* Name: {""} */}
       {person
-        ? `Name: ${person.name}, Eyes: ${person.eye_color}, Birth year: ${person.birth_year}, Gender: ${person.gender}`
+        ? `Name: ${person.name}, Eyes: ${person.eye_color}, Birth year: ${person.birth_year}, Gender: ${person.gender} Skin Color: ${person.skin_color}`
         : "Loading..."}
     </div>
   );
